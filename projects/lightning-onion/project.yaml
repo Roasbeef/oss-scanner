@@ -1,0 +1,16 @@
+# OSS Scanner enrolment for lightning-onion. Schema: templates/project.yaml.
+repo: https://github.com/lightningnetwork/lightning-onion#master
+
+# Reports and build failures go to the Lightning Labs security alias. This address is already
+# public in the SECURITY.md of lnd, btcd and loop.
+primary_contact: security@lightning.engineering
+
+homepage: https://github.com/lightningnetwork/lightning-onion
+
+output_format:
+  email:
+    min_severity: medium
+  github_security_advisory:
+    min_severity: none
+
+disabled: false
